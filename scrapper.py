@@ -64,7 +64,7 @@ def extract_jobs(last_page, url):
     jobs = []
     for page in range(last_page):
         print(f"Scrapping page {page}")
-        result = requests.get(f"{url}&start={page*10}")
+        result = requests.get(f"{url}&start={page*50}")
         soup = BeautifulSoup(result.text, "html.parser")
         results = soup.find_all("div", {"class": "jobsearch-SerpJobCard"})
         for result in results:
@@ -74,7 +74,7 @@ def extract_jobs(last_page, url):
 
 
 def get_jobs(word):
-  url = f"https://kr.indeed.com/%EC%B7%A8%EC%97%85?q={word}"
+  url = f"https://kr.indeed.com/%EC%B7%A8%EC%97%85?q={word}&limit=50"
   last_page = get_last_page(url)
   jobs = extract_jobs(last_page, url)
   return jobs

@@ -95,7 +95,7 @@ def extract_jobs(last_page, url):
     jobs = []
     for page in range(last_page):
         print(f"Scrapping page {page}")
-        result = requests.get(f"{url}&start={page*10}")
+        result = requests.get(f"{url}&start={page*50}")
         soup = BeautifulSoup(result.text, "html.parser")
         results = soup.find_all("div", {"class": "jobsearch-SerpJobCard"})
         for result in results:
@@ -106,7 +106,7 @@ def extract_jobs(last_page, url):
 # word argument를 추가하고 {}에 word argument로 검색할 수 있게함
 # 다음으로 url argument도 추가해서 url 안에서 scrapping함
 def get_jobs(word):
-  url = f"https://kr.indeed.com/%EC%B7%A8%EC%97%85?q={word}"
+  url = f"https://kr.indeed.com/%EC%B7%A8%EC%97%85?q={word}&limit=50"
   last_page = get_last_page(url)
   jobs = extract_jobs(last_page, url)
   return jobs

@@ -44,7 +44,7 @@ def extract_job(whatever):
             salary = str(salary.string)
         salary = salary.strip()
     else:
-      salary = None
+      salary = ""
 
     return {
         "title":

@@ -8,10 +8,6 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/<username>")
-def blahblah(username):
-    return f"Hello, your name is {username}"
-
 ## form의 action으로 page가 넘어올 때
 ## placeholder로 입력한 word를 argument화해서
 ## report.html에 있는 blahblue로 넘겨줌

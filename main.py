@@ -6,6 +6,7 @@ app = Flask("SuperScrapper")
 
 db = {}
 
+
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -28,7 +29,7 @@ def report():
     "report.html", 
     searchingBy=word, 
     resultsNumber=len(jobs),
-    jobs=jobs
+    job_result=jobs
   )
 
 

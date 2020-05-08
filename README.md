@@ -1,6 +1,6 @@
 # Super Scrapper
 
-Scrapping Job by Flask 
+Scrapping jobs from the indeed site by Flask.
 
 ## Demo Link
 
@@ -18,15 +18,15 @@ Feel free to find the job you want on this site. Enjoy!
 ### `Feature`
 
 - Job Search (직업 검색)
-- Job Apply (직업 지원)
-- File Download (파일 다운로드)  
-  `After download the file, please add the extension ".csv"`
+- Job Apply (입사지원서 확인)
 - Fake DB (가짜 DB)
+- File Download (파일 다운로드)  
+  `After download the file, please add the extension ".csv" / ex)"export.csv"`
 
 ## Customization: How to run this project
 
 Very simple. Click [Super Scrapper](http://superscrapper--youngwookkim.repl.co/) and Searching!  
-링크를 클릭하신 뒤 원하는 직업을 검색하시면 됩니다. 
+링크를 클릭하고 원하는 직업을 검색하면 됩니다. 
 
 ## What I used for this project 
 

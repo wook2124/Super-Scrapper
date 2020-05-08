@@ -53,10 +53,10 @@ def extract_job(whatever):
         company,
         "location":
         location,
-        "link":
-        f"https://kr.indeed.com/%EC%B1%84%EC%9A%A9%EB%B3%B4%EA%B8%B0?jk={job_id}",
         "salary":
-        salary
+        salary,
+        "link":
+        f"https://kr.indeed.com/%EC%B1%84%EC%9A%A9%EB%B3%B4%EA%B8%B0?jk={job_id}"
     }
 
 

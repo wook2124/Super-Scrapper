@@ -14,8 +14,8 @@
   <body>
   	<h1>Search Results</h1>
     <h3>Found {{resultsNumber}} results for: {{searchingBy}}</h3>
-    # a href로 export 추가
-    <a href="/export?word={{searchingBy}}">Export to CSV</a>
+    # a href로 export 추가함
+    <a href="/export?word={{searchingBy}}" target="_blank">Export to CSV</a>
     <section>
       <h4>Title</h4>
       <h4>Company</h4>
@@ -32,7 +32,6 @@
     </section>
   </body>
 </html>
-
 
 
 from flask import Flask, render_template, request, redirect

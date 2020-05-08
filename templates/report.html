@@ -6,7 +6,7 @@
       section {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
       }
     </style>
   </head>
@@ -14,15 +14,18 @@
   <body>
   	<h1>Search Results</h1>
     <h3>Found {{resultsNumber}} results for: {{searchingBy}}</h3>
+    <a href="/export?word={{searchingBy}}">Export to CSV</a>
     <section>
       <h4>Title</h4>
       <h4>Company</h4>
       <h4>Location</h4>
+      <h4>Salary</h4>
       <h4>Link</h4>
       {% for potato in jobs %}
         <span>{{potato.title}}</span>
         <span>{{potato.company}}</span>
         <span>{{potato.location}}</span>
+        <span>{{potato.salary}}</span>
         <a href="{{potato.link}}" target="_blank">Apply</a>
       {% endfor %}
     </section>

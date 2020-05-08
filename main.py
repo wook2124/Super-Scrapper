@@ -44,7 +44,8 @@ def export():
     if not jobs:
       raise Exception()
     save_file(jobs)
-    return send_file("jobs.csv")
+    file_name = f"static/results/file_path.csv"
+    return send_file(file_name, mimetype='text/csv', attachment_filename=f'{word}_jobs.csv', as_attachment=True)    
   except:
     return redirect("/")
 

@@ -56,6 +56,23 @@ def export():
 
 app.run(host="0.0.0.0")
 
+# 파일 저장하는 부분을 수정했지만 실패
+@app.route("/export")
+def export():
+  try:
+    word = request.args.get('word')
+    if not word: 
+      raise Exception()
+    word = word.lower()
+    jobs = db.get(word)
+    if not jobs:
+      raise Exception()
+    save_file(jobs)
+    file_name = f"static/results/file_path.csv"
+    return send_file(file_name, mimetype='text/csv', attachment_filename=f'{word}_jobs.csv', as_attachment=True)    
+  except:
+    return redirect("/")
+
 
 # home.html
 <!DOCTYPE html>

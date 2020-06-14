@@ -12,8 +12,8 @@ Scrapping jobs from the indeed site by Flask.
 
 ## Project Description 
 
-Feel free to find the job you want on this site. Enjoy!  
-당신이 원하는 직업을 마음껏 찾으세요! 여러기능들은 아래의 feature를 참고해주세요.
+Feel free to find the job you want on this site! Refer to the `Feature` below for the functions.  
+당신이 원하는 직업을 마음껏 찾으세요! 기능들은 아래 `Feature`를 참고해주세요.
 
 ### `Feature`
 

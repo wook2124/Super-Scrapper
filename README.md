@@ -32,4 +32,6 @@ Very simple. Click [Super Scrapper](http://superscrapper--youngwookkim.repl.co/)
 
 - [X] HTML
 - [X] Python
+- [X] Requests
+- [X] BeautifulSoup4
 - [X] Flask

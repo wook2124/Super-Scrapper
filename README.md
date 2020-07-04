@@ -26,7 +26,7 @@ Feel free to find the job you want on this site! Refer to the `Feature` below fo
 ## Customization: How to run this project
 
 Very simple. Click [Super Scrapper](http://superscrapper--youngwookkim.repl.co/) and Searching!  
-위 링크를 클릭하고 원하는 직업을 검색하면 됩니다. 
+[Super Scrapper](http://superscrapper--youngwookkim.repl.co/)를 클릭하고 원하는 직업을 검색하면 됩니다. 
 
 ## What I used for this project 
 

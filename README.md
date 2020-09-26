@@ -1,6 +1,6 @@
 # Super Scrapper
 
-Scrapping jobs from the indeed site by Flask.
+Scrapping jobs from the indeed site by `Flask`.
 
 ## Demo Link
 
